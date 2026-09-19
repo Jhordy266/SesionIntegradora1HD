@@ -55,3 +55,28 @@ La tabla contiene los siguientes campos:
 El script de creación de la base de datos se encuentra en:
 
 `database/registro_usuarios.sql`
+
+## Backend
+
+El backend utiliza Node.js, Express y MySQL2 y sigue una estructura MVC separando modelo, controlador y rutas.
+
+Endpoints disponibles:
+
+* `GET /api/usuarios`
+* `GET /api/usuarios/:id`
+* `POST /api/usuarios`
+* `PUT /api/usuarios/:id`
+* `DELETE /api/usuarios/:id`
+
+Para ejecutar el backend:
+
+```bash
+cd backend
+npm install
+```
+
+Copiar `.env.example` como `.env` y completar las credenciales locales de MySQL. Luego ejecutar:
+
+```bash
+npm run dev
+```
